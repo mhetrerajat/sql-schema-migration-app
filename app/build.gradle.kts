@@ -16,6 +16,19 @@ repositories {
 }
 
 dependencies {
+
+    // Liquibase
+    implementation(libs.liquibase)
+
+    // Lombok
+    compileOnly(libs.lombok)
+    annotationProcessor(libs.lombok)
+    testCompileOnly(libs.lombok)
+    testAnnotationProcessor(libs.lombok)
+
+    // Dagger
+    implementation(libs.dagger)
+
     // Use JUnit Jupiter for testing.
     testImplementation(libs.junit.jupiter)
 

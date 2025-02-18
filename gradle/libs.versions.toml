@@ -4,7 +4,13 @@
 [versions]
 guava = "33.3.1-jre"
 junit-jupiter = "5.11.1"
+lombok = "1.18.36"
+dagger = "2.55"
+liquibase = "4.31.0"
 
 [libraries]
 guava = { module = "com.google.guava:guava", version.ref = "guava" }
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit-jupiter" }
+lombok = { module = "org.projectlombok:lombok", version.ref = "lombok" }
+dagger = { module = "com.google.dagger:dagger", version.ref = "dagger" }
+liquibase = { module = "org.liquibase:liquibase-core", version.ref = "liquibase" }
