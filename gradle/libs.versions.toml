@@ -6,11 +6,17 @@ guava = "33.3.1-jre"
 junit-jupiter = "5.11.1"
 lombok = "1.18.36"
 dagger = "2.55"
+dagger-compiler = "2.55"
 liquibase = "4.31.0"
+mockito-core = "5.15.2"
+mockito-junit-jupiter = "5.15.2"
 
 [libraries]
 guava = { module = "com.google.guava:guava", version.ref = "guava" }
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit-jupiter" }
 lombok = { module = "org.projectlombok:lombok", version.ref = "lombok" }
 dagger = { module = "com.google.dagger:dagger", version.ref = "dagger" }
+dagger-compiler = { module = "com.google.dagger:dagger-compiler", version.ref = "dagger-compiler" }
 liquibase = { module = "org.liquibase:liquibase-core", version.ref = "liquibase" }
+mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockito-core"}
+mockito-junit-jupiter = { module = "org.mockito:mockito-junit-jupiter", version.ref = "mockito-junit-jupiter"}

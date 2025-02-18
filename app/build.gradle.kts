@@ -28,11 +28,16 @@ dependencies {
 
     // Dagger
     implementation(libs.dagger)
+    annotationProcessor(libs.dagger.compiler)
 
     // Use JUnit Jupiter for testing.
     testImplementation(libs.junit.jupiter)
 
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
+    // Mockito
+    testImplementation(libs.mockito.core)
+    testImplementation(libs.mockito.junit.jupiter)
 
     // This dependency is used by the application.
     implementation(libs.guava)
