@@ -3,12 +3,10 @@
  */
 package org.mhetrerajat;
 
+import javax.inject.Inject;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.mhetrerajat.dagger.components.DaggerAppComponent;
 import org.mhetrerajat.integrations.service.GreetingService;
-
-import javax.inject.Inject;
 
 @RequiredArgsConstructor(onConstructor_ = {@Inject})
 public class App {

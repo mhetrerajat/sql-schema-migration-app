@@ -3,16 +3,15 @@
  */
 package org.mhetrerajat;
 
-import org.junit.jupiter.api.BeforeEach;
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
+
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mhetrerajat.integrations.service.GreetingService;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 class AppTest {
@@ -23,14 +22,14 @@ class AppTest {
     @InjectMocks
     private App app;
 
-    @Test void appHasAGreeting_givenDefaultParameters_returnSuccess() {
+    @Test
+    void appHasAGreeting_givenDefaultParameters_returnSuccess() {
 
         // Mock
         when(greetingService.getGreeting()).thenReturn("Test Greeting");
 
         // Assert
         assertNotNull(app.getGreeting(), "app should have a greeting");
-
         assertNotNull(app);
     }
 }
